@@ -2,7 +2,7 @@
 
 vm=""
 vm_id=`cat $vm | cut -d ' ' -f1`
-vm_name=`cat $vm | cut -d ' ' -f2 | sed 's/\ /_/g`
+vm_name=`cat $vm | cut -d ' ' -f2 | sed 's/\ /_/g'`
 
 for $vm in `cat vm-list`;
 do
